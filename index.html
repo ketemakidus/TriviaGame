@@ -1,63 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <html>
-        <head>
-        <title>Trivia game</title>
 
-        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-        </head>
-        <body>
-            
-        <h1>TOTALLY TRIVIA TRIVIA !</h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <title>Trivia Game</title>
+</head>
 
-        <div id="wrapper">
-        <div id="display">00:00</div>
-        <div id="choices" class="text-center">
-            
-                    <button id="start" class="btn btn-info btn-lg">Start Game</button>
-                    <div id="options">
-                     
-        
-        <P>1. What type of museum is featured in "Night at the Museum"?:<BR>
-        <input type="radio" name="1. What type of museum is featured in Night at the Museum" value="maison">Art<BR>
-        <input type="radio" name="1. What type of museum is featured in Night at the Museum" value="quatre">Avation<BR>
-        <input type="radio" name="1. What type of museum is featured in Night at the Museum" value="soleil">Science<BR>
-        <input type="radio" name="1. What type of museum is featured in Night at the Museum" value="poisson">Natural History<BR>
-        </p>
-        
-        <P>2.Which 1997 film was the first movie with a $200,000,000 budget?:<BR>
-        <input type="radio" name="2. Which 1997 film was the first movie with a $200,000,000 budget?" value="maison">Face/off<BR>
-        <input type="radio" name="2. Which 1997 film was the first movie with a $200,000,000 budget?" value="valise">Titanic<BR>
-        <input type="radio" name="2. Which 1997 film was the first movie with a $200,000,000 budget?" value="soleil">men in black<BR>
-        <input type="radio" name="2. Which 1997 film was the first movie with a $200,000,000 budget?" value="poisson">L.A.Confidental<BR>
-        </p>
-        
-        <P>3.In what film would you find Matt Damon singing "My Funny Valentine"?:<BR>
-        <input type="radio" name="3. In what film would you find Matt Damon singing My Funny Valentine" value="renard">The bourne identity<BR>
-        <input type="radio" name="3. In what film would you find Matt Damon singing My Funny Valentine" value="valise">The departed<BR>
-        <input type="radio" name="3. In what film would you find Matt Damon singing My Funny Valentine" value="soleil">The talented mr.Ripley<BR>
-        <input type="radio" name="3. In what film would you find Matt Damon singing My Funny Valentine" value="poisson">Good will Hunting<BR>
-        </p>
-        
-        <P>4. Which play was performed for Queen Elizabeth at the start of "Shakespeare in Love"?:<BR>
-            <input type="radio" name="4.  Which play was performed for Queen Elizabeth at the start of Shakespeare in Love" value="renard">Hamlet<BR>
-            <input type="radio" name="4.  Which play was performed for Queen Elizabeth at the start of Shakespeare in Love" value="valise">Two Gentlemen Of Verona<BR>
-            <input type="radio" name="4.  Which play was performed for Queen Elizabeth at the start of Shakespeare in Love" value="soleil">  A Midsummer Night's Dream<BR>
-            <input type="radio" name="4.  Which play was performed for Queen Elizabeth at the start of Shakespeare in Love" value="poisson">Romeo And Juliet<BR>
-            </p>
-        <br>
-        <br>
-        <br>
-        <br>
+<body>
 
-                       
-        <button id="done" class="btn btn-info btn-lg">DONE</button>
-       
-       
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
 
-        
-        <script type="text/javascript" src="./assets/javascript/app.js"></script>
-        
-        </body>
-        </html>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div>
+            <div id="game">
+              <p id="timeLeft">Time Remaining: <span id="timer"></span></p>
+              <p id="question"></p>
+            </div>
+            <div id="answers"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div id="choices">
+            <button id="begin" class="btn btn-info btn-lg">Start Game</button>
+            <div id="options"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="./assets/javascript/app.js"></script>
+
+
+
+</body>
+
+</html>
